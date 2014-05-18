@@ -12,11 +12,12 @@ import com.sunshine.apollo.util.JmsUtil;
 
 public class TestProducer {
 
-	private static int THREAD_COUNT = 10;
+	private static int THREAD_COUNT = 9;
 
 	/**
-	 * 测试结果；事物型发布  116147 ms
-	 *         非事务型发布 14050 ms
+	 * 测试结果；事物型发布   10 个线程 发布消息20100 115316 ms
+	 *         非事务型发布 10 个线程  发布消息20100 9314 ms
+	 *         
 	 * @author 夏天松
 	 * @throws JMSException
 	 * @throws InterruptedException 

@@ -13,8 +13,8 @@ public class TestConsumer {
 
 	/**
 	 * 测试结果；事物型消费 100个线程 消费消息20100 126956 ms
-	 *         事物型消费 100个线程 126956 ms
-	 *         非事务型发布 14050 ms
+	 *         事物型消费 10 个线程 消费消息20100 68520 ms
+	 *         非事务型消费 14050 ms
 	 * @author 夏天松
 	 * @throws JMSException
 	 * @throws InterruptedException 
