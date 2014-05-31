@@ -1,4 +1,14 @@
 apollo.jmspool
 ==============
 
-apache-apollo's jms pool and example
+apache-apollo's jms pool and example  
+
+1、简介
+---------
+此项目是针对jms做的一个很简单的连接池，功能是可以配置多个消息队列以及每个队列的连接数。采用轮询的方式向这几个队列发送消息，目前只实现了一个请求只能被一个消费者消费的情况。另外提供的一个功能是，在其中的一个消息队列失去连接时，后台会有线程尝试重连，当连接上后，会初始化新的连接并加入到连接池中。
+
+
+
+2、使用
+---------
+配置config/jms.properties，配置消息队列列表和连接数。代码中最简单的使用办法是调用JmsUtil.publish和JmsUtil.recceive来发送和获取消息。
